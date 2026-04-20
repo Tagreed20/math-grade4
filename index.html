@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أوامرك تصنع الإبداع - مراجعة الرياضيات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <h1>مراجعة منهج الرياضيات - الصف الرابع</h1>
+            <div class="user-info">
+                <input type="text" id="studentName" placeholder="اكتب اسمك يا بطل/ة هنا...">
+                <div class="progress-container">
+                    <div id="progressBar" style="width: 0%;"></div>
+                </div>
+            </div>
+        </header>
 
+        <section class="instructions">
+            <p>📖 اقرأ بهدوء | ✅ تحقق من الحل | 🔄 تنقل بين الأسئلة بحرية</p>
+        </section>
+
+        <main id="quizArea">
+            <div id="questionContainer">
+                <p id="welcomeMessage">أهلاً بك! أدخل اسمك بالأعلى ثم اختر درساً للبدء.</p>
+            </div>
+            
+            <div class="nav-buttons">
+                <button id="prevBtn" class="btn-prev" style="display:none;">السابق</button>
+                <button id="nextBtn" class="btn-next" style="display:none;">التالي</button>
+            </div>
+        </main>
+
+        <nav class="question-nav">
+            <div id="numbersGrid" class="numbers-grid"></div>
+        </nav>
+
+        <aside class="leaderboard">
+            <h3>لوحة الأبطال 🏆</h3>
+            <ul id="topScores">
+                <li>لم يشارك أحد بعد، كن الأول!</li>
+            </ul>
+        </aside>
+    </div>
+
+    <script src="division.js"></script>
+    <script src="geometry.js"></script>
+    <script src="fractions.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
