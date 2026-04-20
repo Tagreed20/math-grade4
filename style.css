@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Tajawal', sans-serif;
-    background: linear-gradient(135deg, #e0f2fe 0%, #fdf2f8 100%); /* خلفية ناعمة جداً */
+    background: linear-gradient(135deg, #e0f2fe 0%, #fdf2f8 100%); /* خلفية باستيل ناعمة */
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -21,14 +21,18 @@ body {
     box-shadow: 0 20px 40px rgba(0,0,0,0.05);
     border: 10px solid #ffffff;
     text-align: center;
+    position: relative; /* مهم لاحتفالية القصاصات */
+    overflow: hidden;
 }
 
 h1 {
     color: #0369a1;
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-weight: 700;
 }
+
+p { color: #64748b; margin-top: 0; }
 
 input {
     width: 100%;
@@ -87,7 +91,7 @@ input:focus {
 .option-btn:hover {
     background: #f0f9ff;
     border-color: #bae6fd;
-    transform: translateX(-10px); /* حركة انزلاق بسيطة عند التمرير */
+    transform: scale(1.02);
     color: #0284c7;
 }
 
@@ -97,6 +101,19 @@ input:focus {
     border-radius: 15px;
     font-weight: bold;
     font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.feedback-correct {
+    background-color: #d1fae5;
+    color: #065f46;
+    border: 2px solid #a7f3d0;
+}
+
+.feedback-wrong {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 2px solid #fecaca;
 }
 
 #progressBar {
